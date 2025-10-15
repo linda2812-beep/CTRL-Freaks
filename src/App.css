@@ -1,0 +1,101 @@
+/* Conteneur principal en colonne qui occupe tout l'écran */
+.app-container {
+  min-height: 100%;
+  min-height: 100dvh;          /* iOS/Android friendly */
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR + FOOTER */
+.navbar {
+  background: #1e3a8a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.navbar .logo { font-weight: 700; }
+.navbar nav { display: flex; gap: 1.25rem; }
+.navbar a { color: #fff; font-weight: 500; }
+.navbar a:hover { color: #38bdf8; }
+
+/* Main doit occuper tout l'espace restant entre navbar et footer */
+main {
+  flex: 1;                     /* <<< clé : prend tout l'espace disponible */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pages */
+.home-page {
+  flex: 1;                     /* occupe 100% du main */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+.page {
+  flex: 1;                     /* occupe 100% du main */
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* centrer verticalement le contenu */
+  align-items: center;
+  text-align: center;
+}
+
+/* Grille services */
+.services-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  width: min(1100px, 100%);
+}
+.card {
+  background: #e0e7ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.06);
+}
+
+/* Formulaire devis */
+form {
+  width: min(420px, 100%);
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+input, textarea, button {
+  font: inherit;
+}
+input, textarea {
+  padding: .8rem 1rem;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  background: #fff;
+}
+button {
+  padding: .9rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: #1e3a8a;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover { background: #3b82f6; }
+
+/* Footer */
+.footer {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}

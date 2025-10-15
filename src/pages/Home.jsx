@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Home() {
     return (
       <section className="home-page">
@@ -6,7 +7,9 @@ export default function Home() {
           <p>
             Nous créons des sites modernes et performants qui propulsent votre entreprise.
           </p>
-          <a href="/devis" className="btn">Demander un devis</a>
+          <Link to="/devis" className="btn-devis">
+            Demander un devis
+          </Link>
         </div>
       </section>
     );

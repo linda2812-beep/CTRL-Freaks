@@ -93,6 +93,32 @@ button {
 }
 button:hover { background: #3b82f6; }
 
+.btn-devis {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #007bff; /* bleu moderne */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-devis:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+}
+
+.btn-devis:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+
 /* Footer */
 .footer {
   background: #1e3a8a;

@@ -28,6 +28,7 @@ main {
   flex-direction: column;
 }
 
+
 /* Pages */
 .home-page {
   flex: 1;                     /* occupe 100% du main */
